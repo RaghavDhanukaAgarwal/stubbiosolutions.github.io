@@ -58,44 +58,51 @@
         </div>
     </section>
 
-<!-- Founder Section -->
-<section id="founder" class="founder-section">
-  <h2>Meet the Founders</h2>
-  <div class="founder-container">
-      <div class="founder">
-          <img src="founder1" alt="Founder 1">
-          <h3>Founder 1 Name</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vero autem rerum sunt fuga praesentium similique nihil! Sequi voluptas vitae sunt architecto, id tenetur doloribus.</p>
-      </div>
-      <div class="founder">
-          <img src="founder2" alt="Founder 2">
-          <h3>Founder 2 Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, harum maiores. Nobis, at veritatis, eum autem magni, assumenda aspernatur harum facere sunt tempore illum quos?</p>
-      </div>
-      <div class="founder">
-          <img src="founder3.jpg" alt="Founder 3">
-          <h3>Founder 3 Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum nulla rem hic debitis cum. Reprehenderit optio illum excepturi veniam doloribus? Praesentium corporis explicabo numquam!</p>
-      </div>
-  </div>
-</section>
+    <!-- Founder Section -->
+    <section id="founder" class="founder-section">
+        <h2>Meet the Founders</h2>
+        <div class="founder-container">
+            <div class="founder">
+                <img src="founder1" alt="Founder 1">
+                <h3>Founder 1 Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vero autem rerum sunt fuga praesentium similique nihil! Sequi voluptas vitae sunt architecto, id tenetur doloribus.</p>
+            </div>
+            <div class="founder">
+            <img src="founder2" alt="Founder 2">
+            <h3>Founder 2 Name</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, harum maiores. Nobis, at veritatis, eum autem magni, assumenda aspernatur harum facere sunt tempore illum quos?</p>
+            </div>
+            <div class="founder">
+                <img src="founder3.jpg" alt="Founder 3">
+                <h3>Founder 3 Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum nulla rem hic debitis cum. Reprehenderit optio illum excepturi veniam doloribus? Praesentium corporis explicabo numquam!</p>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <form action="https://formsubmit.co/f10868bf22d69191a1dc8c8e24ca1d72" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>      
-        <!-- <form id="contactForm">
-          <input type="text" name="name" id="name" placeholder="Your Name" required>
-          <input type="email" name="email" id="email" placeholder="Your Email" required>
-          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-      </form> -->
-      <p id="responseMessage"></p>      
+            <!-- Anti-spam -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+      
+            <!-- Actual Fields -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Query or Message" required></textarea>
+      
+            <!-- Optional Consent -->
+            <label style="font-size: 0.9em; text-align: left;">
+            <input type="checkbox" required style="width:auto; margin-right: 8px;">
+            I agree to be contacted regarding my query.
+            </label>
+  
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+  
     <footer>
         <p>© 2025 The Stubble Solutions. All Rights Reserved.</p>
     </footer>
