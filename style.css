@@ -1,211 +1,248 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
   background-color: #E0DED9;
+  color: #0D3C31;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #E0DED9;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
   text-align: center;
 }
 
-/* Company Name & Logo */
-.header {
-  padding: 20px 0;
-  background: #E0DED9;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  width: 150px;
-  height: 100px;
-  margin-right: 0px;
-}
-
-.company-name {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Navigation Pane */
-.navbar {
-  background: #E0DED9;
-  padding: 15px 0;
-}
-
-.nav-links {
-  list-style: none;
+nav ul {
+  list-style-type: none;
   padding: 0;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
-.nav-links li {
-  display: inline;
-}
-
-.nav-links li a {
-  color: #333;
+nav a {
+  color: #0D3C31;
   text-decoration: none;
-  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.nav-links li a:hover {
-  color: #000000;
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background: linear-gradient(to right, #0D3C31, #1F5C4A);
+  color: #E0DED9;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
+#hero .content {
+  max-width: 600px;
+}
+
+#mission-section {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.hero img {
-  width: 100%;
-  max-height: 500px;
+.mission-wrapper {
+  display: flex;
+  width: 90%;
+  height: 90%;
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.mission-image img {
+  width: 98%;
+  height: 100%;
   object-fit: cover;
 }
 
-/* Tagline Over Image */
-.tagline-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.tagline {
-  font-size: 2em;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-
-/* Sections */
-.section {
+.mission-content {
+  flex: 1;
+  background-color: #0D3C31;
+  color: #E0DED9;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
-  background: #E0DED9;
-  flex-wrap: wrap;
+  padding: 2rem;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.section .content {
-  width: 50%;
-  padding: 20px;
+.mission-text-box {
+  max-width: 90%;
   text-align: left;
 }
 
-.section .image {
-  width: 50%;
-  text-align: center;
+.mission-text-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.section img {
-  width: 80%;
-  border-radius: 10px;
+.mission-text-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Founder Section */
-.founder-section {
-  text-align: center;
-  padding: 60px;
-  background: #E0DED9;
-}
-
-.founder-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.founder {
-  width: 30%;
-  text-align: center;
-}
-
-.founder img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-}
-
-.founder h3 {
-  margin-top: 10px;
-  font-size: 1.5em;
-  color: #333;
-}
-
-.founder p {
-  font-size: 1em;
-  color: #666;
-}
-
-/* Contact Section */
-.contact-section label {
-  margin: 10px 0;
+.photo-placeholder {
+  height: auto;
   display: flex;
   align-items: center;
-  justify-content: start;
-  color: black;
+  justify-content: center;
+  color: #333;
+  margin: 2rem 0;
 }
 
-.contact-section input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.contact-section {
+section {
+  padding: 2rem;
   text-align: center;
-  padding: 50px;
-  background: #E0DED9;
-  color: black;
 }
 
 form {
-  max-width: 400px;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
 }
 
 input, textarea {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 button {
-  background: black;
-  color: white;
-  padding: 10px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #0D3C31;
+  color: #E0DED9;
   border: none;
   cursor: pointer;
-  font-size: 1em;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: black;
+  background-color: #1F5C4A;
 }
 
-/* Footer */
 footer {
-  background: #333;
-  color: white;
+  background-color: #0D3C31;
+  color: #E0DED9;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  margin-bottom: 0rem;
+}
+.photo-placeholder img {
+  max-width: 100%;
+  height: 50vh;
+  display: block;
+  margin: 0 auto;
+}
+
+#founders {
+  background-color: #0D3C31; /* Dark green background */
+  text-align: center;
+  max-width: 1600px;
+  margin-left: 140px;
+}
+
+.founders-wrapper {
+  background-color: #0D3C31;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.founders-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping to keep all 3 side by side */
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.founder {
+  background-color: #E0DED9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%; /* Let flexbox distribute space equally */
+  max-width: 300px; /* Consistent sizing */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .founders-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .founder {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+}
+
+.founder img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  align-self: center;
+
+}
+
+.founder-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+  color: #0D3C31;
+}
+
+.founder-role {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #0D3C31;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  color: #0D3C31;
+  line-height: 1.4;
+}
+
+html, body {
+  overflow-x: hidden;
 }
