@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Stubbio Solutions - Turning stubble into sustainable tableware">
   <title>Stubbio Solutions</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="Logo.png" alt="Stubbio Logo" class="logo" />
-    <h1>Stubbio Solutions</h1>
-    <nav>
+    <nav class="nav-bar">
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#mission">Mission</a></li>
+        <li><a href="#logo-center">Home</a></li>
+        <li><a href="#mission-section">Mission</a></li>
+        <li><a href="#problem-section">Problem & Solution</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
+  <section class="logo-center">
+    <img src="Logo-3.png" alt="Stubbio Logo" class="main-logo">
+  </section>
+
   <section id="hero">
     <div class="content">
-      <h2>From Fields to Future: Harvesting Changes </h2>
+      <h2>From Fields to Future: Harvesting Changes</h2>
       <p>We convert stubble into eco-friendly disposable tableware.</p>
     </div>
   </section>
@@ -29,62 +32,93 @@
   <section id="mission-section">
     <div class="mission-wrapper">
       <div class="mission-image">
-        <img src="Hero_2.jpg" alt="Stubble in field">
+        <img src="Hero.jpg" alt="Stubble in field">
       </div>
       <div class="mission-content">
         <div class="mission-text-box">
           <h2>What We Are</h2>
-          <p>We are a Eco-conscious startup who wants to make a change. Our startup is focused on providing an innovative and environmentally sustainable solution to the problem of stubble burning and single-use plastic waste. Every year, millions of tons of agricultural stubble are burned across India, causing severe air pollution and environmental degradation. At the same time, the growing demand for disposable tableware contributes significantly to plastic waste, further harming the environment. Our solution lies in repurposing agricultural stubble, a byproduct of farming, and converting it into biodegradable, compostable disposable tableware.</p>
+          <p>Stubbio Solutions is a purpose-driven company focused on building a cleaner, greener, and more sustainable future. We specialize in transforming agricultural waste into high-quality biodegradable tableware, offering an innovative alternative to harmful single-use plastics. Rooted in environmental responsibility and innovation, our mission is to create value from waste and drive the shift toward a circular economy.</p>
         </div>
       </div>
     </div>
-  </section>  
+  </section>
+
+  <section id="problem-section">
+    <div class="mission-wrapper">
+      <div class="mission-content">
+        <div class="mission-text-box">
+          <h2>The Problem</h2>
+          <p>Every year, millions of tons of agricultural stubble are burned across India, contributing heavily to air pollution and environmental degradation. Simultaneously, the widespread use of plastic and styrofoam disposable products continues to damage ecosystems, filling landfills and oceans with non-biodegradable waste. These two challenges not only harm the planet but also pose serious health and climate risks</p>
+        </div>
+      </div>
+      <div class="mission-image">
+        <img src="Hero.jpg" alt="Our Eco Solution">
+      </div>
+    </div>
+  </section>
+
+  <section id="solution-section">
+    <div class="mission-wrapper">
+      <div class="mission-image">
+        <img src="Hero.jpg" alt="Stubble in field">
+      </div>
+      <div class="mission-content">
+        <div class="mission-text-box">
+          <h2>The Solution</h2>
+          <p>At Stubbio Solutions, we convert agricultural stubble—once considered waste—into durable, compostable disposable tableware using advanced, eco-friendly technologies. Our products provide a planet-friendly alternative to plastic, helping reduce pollution and promote circular, sustainable practices.</p>
+          <p>We cater industries like hospitality, food services, event management,  airlines, railways, catering services, eco-conscious packaging, corporate offices, educational institutions, and government initiatives aimed at reducing plastic use. By offering a scalable, responsible solution, we empower a wide range of sectors to meet their sustainability goals without compromising on quality or convenience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="founders">
-    <h2 style="color: #E0DED9";>Our Founders</h2>
+    <h2 class="section-title">Our Founding Team</h2>
     <div class="founders-wrapper">
       <div class="founders-container">
         <div class="founder">
           <img src="Raghav.jpg" alt="Founder 1">
           <p class="founder-name">Raghav Dhanuka</p>
-          <p class="founder-role">Co-Founder & CEO</p>
-          <p class="founder-bio">Riya is an environmental visionary...</p>
+          <p class="founder-role">Co-Founder</p>
+          <p class="founder-bio">Raghav is an environmental visionary...</p>
         </div>
         <div class="founder">
           <img src="Shivam.jpg" alt="Founder 2">
           <p class="founder-name">Shivam Sarraf</p>
-          <p class="founder-role">Co-Founder & CTO</p>
-          <p class="founder-bio">With a background in operations...</p>
+          <p class="founder-role">Co-Founder</p>
+          <p class="founder-bio">With a background in technology...</p>
         </div>
         <div class="founder">
           <img src="Ayush.jpg" alt="Founder 3">
           <p class="founder-name">Ayush Mittal</p>
-          <p class="founder-role">Co-Founder & CMO</p>
-          <p class="founder-bio">Neha leads marketing...</p>
+          <p class="founder-role">Co-Founder</p>
+          <p class="founder-bio">Ayush leads marketing...</p>
         </div>
       </div>
     </div>
   </section>
-  
 
   <section id="contact">
     <h2>Contact Us</h2>
     <form id="contact-form" action="https://formsubmit.co/f10868bf22d69191a1dc8c8e24ca1d72" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email"/>
-      <input type="tel" name="contact" placeholder="Your Contact Number" required />
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      <input type="tel" name="contact" placeholder="Your Contact Number" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
       <textarea name="message" placeholder="Your Message or Query" required></textarea>
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+      <input type="hidden" name="_next" value="https://raghavdhanukaagarwal.github.io/stubbiosolutions.github.io/">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Stubbio Solutions. We have received your message and will get back to you shortly!">
       <button type="submit">Send</button>
     </form>
-    <p id="form-status" style="text-align: center; color: green; margin-top: 1rem;"></p>
+    <p id="form-status"></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Stubbio Solutions</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
